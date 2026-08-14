@@ -1,11 +1,11 @@
 let score = "gfdgfd"
 
-// console.log(typeof score)
-// console.log(typeof(score))
+// console.log(typeof score) // string
+// console.log(typeof(score)) // string
 
 let valueInNumber = Number(score);
-// console.log(typeof valueInNumber)
-// console.log(valueInNumber)
+// console.log(typeof valueInNumber) // number
+// console.log(valueInNumber) // NaN
 
 
 // "33" => 33
@@ -20,7 +20,7 @@ let valueInNumber = Number(score);
 let isLoggedIn = true
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-//console.log(booleanIsLoggedIn)
+// console.log(booleanIsLoggedIn)
 
 // 1 => true; 0 => false
 // "" => false
@@ -31,7 +31,6 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 
 
 let age = 45
-
 console.log(typeof age)
 
 let stringAge = String(age);

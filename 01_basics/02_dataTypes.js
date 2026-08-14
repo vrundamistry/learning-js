@@ -25,7 +25,9 @@ let state;
 
 
 /* Non-premitive Data Types */
-// object 
+// object
+// array
+// functions
 
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object

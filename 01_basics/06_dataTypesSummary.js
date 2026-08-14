@@ -51,4 +51,6 @@ const myFunction = function () {
 
 
 
+console.log(typeof fruits);
 console.log(typeof myObj);
+console.log(typeof myFunction);
