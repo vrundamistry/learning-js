@@ -1,17 +1,18 @@
 const vegetables = ["potato", "onion", "peas", "tomato"];
 const fruits = ["banana", "apple", "grapes"];
 
-//vegetables.push(fruits);
-// console.log(vegetables);
-// console.log(vegetables[4][1]);
+// vegetables.push(fruits);
+// console.log(vegetables); // ["potato", "onion", "peas", "tomato", ["banana", "apple", "grapes"]]
+
+// console.log(vegetables[4][1]); // banana
 
 
 const all = vegetables.concat(fruits);
-//console.log(all);
+console.log(all);
 
 //sprade array 
 const all_thing = [...vegetables, ...fruits]; 
-// console.log(all_thing);
+console.log(all_thing);
 
 
 //----------------- flat ---------------------
@@ -65,4 +66,4 @@ let score1 = 100;
 let score2 = 200;
 let score3 = 300;
 
-// console.log(Array.of(score1, score2, score3));
+// console.log(Array.of(score1, score2, score3)); // [ 100, 200, 300 ]

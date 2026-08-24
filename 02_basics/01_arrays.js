@@ -28,11 +28,16 @@ console.log(myArr2)
 // console.log(myArr.indexOf(6))
 // console.log(myArr2.indexOf(6))
 
-    
+
+
+//----------- join ------------    
+// Add all the elements of an array into string, separated by the specified separator string
+
 let newArr = myArr.join();
 
-// console.log(myArr);
-// console.log(newArr);
+// console.log(myArr); // [2, 4, 3, 6, 8]
+// console.log(newArr); // 2,4,3,6,8
+
 
 
 //----------- slice, splice --------
