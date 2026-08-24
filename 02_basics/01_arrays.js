@@ -16,12 +16,13 @@ const myArr2 = new Array(1, 2, 3, 4, 5);
 myArr2.push(6)
 myArr2.push(7)
 myArr2.pop()
-//console.log(myArr2);
+console.log(myArr2);
 
 
 myArr2.unshift(4)
+console.log(myArr2)
 myArr2.shift()
-//console.log(myArr2)
+console.log(myArr2)
 
 // console.log(myArr.includes(5));
 // console.log(myArr.indexOf(6))
