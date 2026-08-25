@@ -1,5 +1,5 @@
 // object declarsation type
-// 1. literal (not singleton)
+// 1. literal - (not singleton)
 // 2. constructor - (singleton)
 
 
