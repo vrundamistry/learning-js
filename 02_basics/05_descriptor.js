@@ -32,3 +32,5 @@ for(let [key, value] of Object.entries(chai)) {
         console.log(`${key} : ${value}`);
     }   
 }
+
+// it gives result  price : 250, isAvailable : true because we set enumerable = false for "name" parameter and also check condition for value is not function

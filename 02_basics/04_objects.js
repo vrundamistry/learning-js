@@ -6,7 +6,7 @@ tinderUser.id = 1
 tinderUser.name = "abc"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
+// console.log(tinderUser);  // { id: 1, name: 'abc', isLoggedIn: false }
 
 
 
@@ -21,7 +21,7 @@ const regularUser = {
     }
 }
 
-// console.log(regularUser.fullname.userfullname.firstname)
+// console.log(regularUser.fullname.userfullname.firstname) // vrunda
 
 
 
@@ -30,10 +30,10 @@ const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj3 = {5: "c", 6: "d"}
 
-// const objCombine = {obj1, obj2}
-// const objCombine = Object.assign({}, obj1, obj2, obj3)
+// const objCombine = {obj1, obj2} // { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
+// const objCombine = Object.assign({}, obj1, obj2, obj3) // { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'c', '6': 'd' }
 
-const objCombine = {...obj1, ...obj2, ...obj3}
+const objCombine = {...obj1, ...obj2, ...obj3} // { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'c', '6': 'd' }
 
 // console.log(objCombine);
 
@@ -83,9 +83,9 @@ const course = {
 }
 
 const {courseInstructor} = course
-console.log(courseInstructor);
+console.log(courseInstructor); // abc
 
 const {courseInstructor: instructor} = course
-console.log(instructor);
+console.log(instructor); // abc
 
 

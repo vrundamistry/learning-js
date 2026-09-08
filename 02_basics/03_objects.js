@@ -1,4 +1,4 @@
-// object declarsation type
+/***** object declaration type *****/
 // 1. literal - (not singleton)
 // 2. constructor - (singleton)
 
@@ -50,6 +50,7 @@ jsUser.greeting = function(){
 
 jsUser.greetingTwo = function(){
     console.log(`Hello JS User, ${this.name}`);
+    console.log(`Hello JS User, ${this["full name"]}`);
 }
 
 console.log(jsUser.greeting);

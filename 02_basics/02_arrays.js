@@ -7,6 +7,8 @@ const fruits = ["banana", "apple", "grapes"];
 // console.log(vegetables[4][1]); // banana
 
 
+//----------------- concat ---------------------
+
 const all = vegetables.concat(fruits);
 console.log(all);
 
@@ -22,9 +24,10 @@ console.log(all_thing);
 
 const another_arr = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
 
-const real_another_arr = another_arr.flat(Infinity);
-//console.log(real_another_arr);
-
+const real_another_arr = another_arr.flat(Infinity); // [ 1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5 ]
+console.log(real_another_arr);
+const real_another_arr1 = another_arr.flat(1); // [ 1, 2, 3, 4, 5, 6, 7, 6, 7, [ 4, 5 ] ]
+console.log(real_another_arr1);
 
 
 // console.log(Array.isArray("Vrunda"));
