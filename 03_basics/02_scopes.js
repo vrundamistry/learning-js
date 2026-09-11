@@ -17,10 +17,10 @@ function one(){
 
     function two(){
         const surname = "Thomas";
-        // console.log(username);
+        console.log(username);
     }
 
-    //console.log(surname);
+    // console.log(surname);
 
     two();
 }

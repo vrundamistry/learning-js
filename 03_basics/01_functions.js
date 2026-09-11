@@ -51,7 +51,7 @@ function loginUserMessage(username){
 
 // console.log(loginUserMessage("vrunda"));
 
-// loginUserMessage(); // if used wthout console.log it print only 'Please enter username'
+// loginUserMessage(); // if used without console.log it print only 'Please enter username'
 
 // console.log(loginUserMessage()); // if used with console.log it print only 'Please enter username' & 'undefined'
 
@@ -74,17 +74,17 @@ function loginUserMessage1(username = "Jhon"){
 function calculateCartPrice(...num1){
     return num1;
 }
-// console.log(calculateCartPrice(200, 400, 500));
+// console.log(calculateCartPrice(200, 400, 500)); //[ 200, 400, 500 ]
 
 
 function calculateCartPrice1(val1, val2, ...num1){
     return num1;
 }
-// console.log(calculateCartPrice1(200, 400, 500, 800));
+// console.log(calculateCartPrice1(200, 400, 500, 800)); // [500, 800]
+
 
 
 //------------ function with object ------------
-
 
 const user = {
     name: "Jhon",
@@ -103,8 +103,7 @@ console.log(handleObject({
 
 
 
-//------------ function with aaary ------------
-
+//------------ function with array ------------
 
 const myNewArr = [200, 400, 500, 700];
 
