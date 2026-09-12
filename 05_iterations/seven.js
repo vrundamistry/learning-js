@@ -1,35 +1,21 @@
-// let coding = ["js", "cpp", "php", "python", "ruby"]
 
-// const values = coding.forEach( (item) => {
-//     // console.log(item);
-//     return item
-// } )
-
-// console.log(values)
-
-
-//---------- filter -----------
-// filter returns value
+//--------- map -----------
 
 let myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// let resultNum = myNum.filter( (num) => num > 4  )
+// let resultNum = myNum.map( (num) => num + 10 )
 // console.log(resultNum)
 
 
-// let resultNum = myNum.filter( (num) => {
-//     return num > 4
-// } )
+//----- chaining -----
+
+const resultNum = myNum
+                    .map( (num) => num * 10 )
+                    .map( (num) => num + 1 )
+                    .filter( (num) => num > 50 )
+
 // console.log(resultNum)
 
-
-// let newNum = []
-// myNum.forEach( (num) => {
-//     if (num > 4) {
-//         newNum.push(num)
-//     }
-// })
-// console.log(newNum)
 
 
 const books = [
@@ -91,22 +77,7 @@ const books = [
   }
 ];
 
-// Get only Programming books
-// const resultBook = books.filter( (b) => b.genre === "Programming")
-//console.log(resultBook)
 
-
-// Books published after 2000
-// const resultBook = books.filter( (b) => b.published > 2000 )
-//console.log(resultBook)
-
-
-// // Books published after 1995 and genre is finance
-// const resultBook = books.filter( (b) => b.published > 1995 && b.genre === "Finance" )
-// console.log(resultBook)
-
-
-// // Print all book titles
-// books.forEach( (b) => {
-//     console.log(b.title)
-// } )
+// Create an array of only titles
+const resultBook = books.map( (b) => b.title )
+console.log(resultBook)
