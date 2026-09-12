@@ -39,7 +39,7 @@ for (const [key, value] of map) {
 }
 
 
-// object ( 'for of' loop not worked with Object)
+// NOTE: object ('for of' loop not worked with Object)
 const myObj = {
     'game1': "Super Mario",
     "game2": "Tank",

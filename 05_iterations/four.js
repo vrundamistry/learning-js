@@ -22,7 +22,8 @@ for (const key in programming) {
 }
 
 
-// map
+// // Map
+// // NOTE: Map ('for In' loop not worked with Map)
 // const map = new Map()
 
 // map.set("IN", "India")
@@ -33,3 +34,12 @@ for (const key in programming) {
 // for (const key in map) {
 //     console.log(key)
 // }
+
+
+//----------------------------//
+//------------ NOTE ----------//
+//----------------------------//
+
+// Array worked with both for-of and for-in. Difference is that with for-of it gives value while with for-in it gives key(index) like 0,1,.. etc
+
+// Object worked with for-in only

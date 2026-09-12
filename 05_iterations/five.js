@@ -1,3 +1,8 @@
+
+//----------- forEach -----------
+
+// forEach didn't return any value
+
 let coding = ["js", "cpp", "php", "python", "ruby"]
 
 // coding.forEach( function(item) {
