@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>    
+    <ul class="language">
+        <li>Javascript</li>
+        <li>PHP</li>
+    </ul>
+</body>
+<script>
+    // Add value
+    function addLanguage(langName){
+        const li = document.createElement("li")
+        li.innerText = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('Python')
+    addLanguage('CPP')
+
+
+    function addOptiLanguage(langName){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('Java')
+
+    
+    // Edit value
+    const changeLang = document.querySelector('li:nth-child(2)')
+    //console.log(changeLang)
+    //changeLang.innerHTML = "Shopify"   
+
+    const newLi = document.createElement("li")
+    newLi.textContent = "LLM"
+    changeLang.replaceWith(newLi)
+
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = "<li>TypeScript</li>"
+
+
+    // Delete value
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+</html> 
