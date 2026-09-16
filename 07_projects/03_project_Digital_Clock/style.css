@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+}
+
+nav {
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: #111111;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #f5c518;
+}
+
+.clock-container {
+  width: min(90%, 600px);
+  padding: 45px 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  margin-top: 40px;
+}
+
+h1 {
+  margin-bottom: 28px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', monospace;
+  font-size: clamp(42px, 10vw, 84px);
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #67e8f9;
+  text-shadow: 0 0 12px rgba(103, 232, 249, 0.8);
+}
+
+.colon {
+  padding: 0 8px;
+  animation: blink 1s steps(1) infinite;
+}
+
+.date {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #dbeafe;
+  letter-spacing: 0.5px;
+}
+
+#clock {
+  font-size: 40px;
+  background-color: #f5c518;
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 400px) {
+  .clock-container {
+    padding: 35px 15px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .colon {
+    padding: 0 3px;
+  }
+
+  .date {
+    font-size: 15px;
+  }
+}

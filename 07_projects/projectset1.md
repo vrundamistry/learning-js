@@ -7,7 +7,7 @@
 
 # Solution Code
 
-## project 1
+## project 1 Solution
 
 ```javascript
 consol.log("test")
@@ -30,7 +30,7 @@ buttons.forEach(function (button) {
 ```
 
 
-## project 2
+## project 2 Solution
 
 ```javascript
 
@@ -75,11 +75,51 @@ form.addEventListener('submit', function (e) {
 ```
 
 
-
-## project 3
+## project 3 Solution
 
 ```javascript
 
+const hoursElement = document.querySelector('#hours');
+const minutesElement = document.querySelector('#minutes');
+const secondsElement = document.querySelector('#seconds');
+const dateElement = document.querySelector('#date');
+
+function updateClock() {
+  const now = new Date();
+
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+
+  hoursElement.textContent = hours;
+  minutesElement.textContent = minutes;
+  secondsElement.textContent = seconds;
+
+  dateElement.textContent = now.toLocaleDateString('en-IN', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+}
+
+updateClock();
+setInterval(updateClock, 1000);
+
+
+//------ Method 2 -----
+
+const clock = document.getElementById('clock');
+
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
 
 
 ```
+
+
+## project 4 Solution
+
+```javascript
