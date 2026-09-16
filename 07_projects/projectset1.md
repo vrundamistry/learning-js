@@ -2,7 +2,7 @@
 
 
 ## Project Link
-[Click Here](https://stackblitz.com/edit/stackblitz-starters-brb2uxof?description=HTML/CSS/JS%20Starter&file=01-colorChanger%2Fstyle.css,01-colorChanger%2Findex.html,01-colorChanger%2Fcolor-changer.js&terminalHeight=10&title=Static%20Starter)
+[Click Here](https://stackblitz.com/edit/stackblitz-starters-2txfle4u?file=index.html)
 
 
 # Solution Code
