@@ -2,7 +2,8 @@
 
 
 ## Project Link
-[Click Here](https://stackblitz.com/edit/stackblitz-starters-2txfle4u?file=index.html)
+[Click Here](https://stackblitz.com/edit/stackblitz-starters-jdmxg5vr?file=index.html)
+
 
 
 # Solution Code
@@ -217,6 +218,74 @@ function newGame() {
     playGame = true;
   });
 }
+
+
+```
+
+
+## project 5 Solution
+
+```javascript
+
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+    <div class="keys-table">
+      <table border="1">
+      <tr>
+        <th>Key</th>
+        <th>Keycode</th>
+        <th>Code</th>
+      </tr>
+      <tr>
+        <td>${e.key === ' ' ? 'Space' : e.key}</td>
+        <td>${e.keyCode}</td>
+        <td>${e.code}</td>
+      </tr>
+    </table>
+    </div>
+  `;
+});
+
+
+```
+
+
+## project 6 Solution
+
+```javascript
+
+// generate random hex color
+
+function randomColor() {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+// console.log(randomColor());
+let inertvalSet;
+function startChangeBgColor() {
+  if (!inertvalSet) {
+    inertvalSet = setInterval(changeBgColor, 1000);
+  }
+  function changeBgColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+}
+
+function stopChangeBgColor() {
+  clearInterval(inertvalSet);
+  inertvalSet = null;
+}
+
+document.getElementById('start').addEventListener('click', startChangeBgColor);
+
+document.getElementById('stop').addEventListener('click', stopChangeBgColor);
 
 
 ```
