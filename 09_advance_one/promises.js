@@ -1,4 +1,4 @@
-// Different method to create promise
+// Different ways to create promise
 
 const promiseOne = new Promise(function(resolve, reject){
     // Do an async task
@@ -6,7 +6,8 @@ const promiseOne = new Promise(function(resolve, reject){
 
     setTimeout(function(){
         console.log('Async task is complete')
-        resolve()
+        resolve() // without resolve(), statement in 
+        // .then() not work
     }, 1000)
 })
 
@@ -71,7 +72,7 @@ promiseFour.then( (data) => {
 
 const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = true
+        let error = false
         if (!error) {
             resolve({username: "javascript", password: "123"})
         } else {
@@ -103,7 +104,7 @@ consumePromiseFive()
 //         const data = await response.json()
 //         console.log(data)
 //     } catch (error) {
-//         console.log("ERROE: ", error)
+//         console.log("ERROR: ", error)
 //     }
 // }
 
